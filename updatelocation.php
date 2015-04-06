@@ -1,5 +1,5 @@
 <?php
-    include 'dbconnect-google.php';
+    include 'dbconnect.php';
     echo "it works";
     $latitude       = isset($_GET['latitude']) ? $_GET['latitude'] : '0';
     $latitude       = (float)str_replace(",", ".", $latitude); // to handle European locale decimals
